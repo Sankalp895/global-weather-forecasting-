@@ -1,0 +1,86 @@
+================================================================================
+ANOMALY ANALYSIS INSIGHTS REPORT
+Generated: 2025-11-29 11:38:09
+================================================================================
+
+SUMMARY
+--------------------------------------------------------------------------------
+Total Records Analyzed: 108,353
+Consensus Outliers Found: 3,271 (3.02%)
+
+TEMPORAL PATTERNS
+--------------------------------------------------------------------------------
+Peak Outlier Months: Nov, Jan, Feb
+Most Common Day: Friday (493 outliers)
+
+Seasonal Pattern:
+  Winter (Dec-Feb): 1,063 outliers
+  Spring (Mar-May): 527 outliers
+  Summer (Jun-Aug): 755 outliers
+  Fall (Sep-Nov): 926 outliers
+
+GEOGRAPHICAL PATTERNS
+--------------------------------------------------------------------------------
+Top 3 Countries:
+  1. Marshall Islands: 268 outliers (nan% of country data)
+  2. Micronesia: 250 outliers (nan% of country data)
+  3. Canada: 233 outliers (nan% of country data)
+
+Top 3 Locations:
+  1. Majuro: 268 outliers
+  2. Palikir: 250 outliers
+  3. Ottawa: 233 outliers
+
+EXTREME CONDITIONS
+--------------------------------------------------------------------------------
+Hottest Outlier: 49.1C in Baghdad, Iraq
+Coldest Outlier: -24.9C in Ulaanbaatar, Mongolia
+Highest Humidity: 100.0% in Vestmannaeyjar, Iceland
+Lowest Humidity: 4.0% in Riyadh, Saudi Arabia
+
+KEY FINDINGS
+--------------------------------------------------------------------------------
+1. Outliers represent 3.02% of total data - relatively clean dataset
+
+2. TEMPORAL INSIGHTS:
+   - Winter months (Jan-Feb) show ~6.7% outlier rate - highest seasonal anomalies
+   - November also elevated at 4.1% - possibly weather transitions
+   - Summer months (Jun-Aug) show lowest outlier rates (~2%)
+   - Day-of-week distribution is fairly uniform (no strong weekly pattern)
+
+3. GEOGRAPHICAL INSIGHTS:
+   - Island nations dominate: Marshall Islands (48.1%) and Micronesia (44.9%)
+   - Arctic/high-latitude countries: Canada (42.1%), Iceland (20.5%), Norway (13.3%)
+   - These regions experience extreme weather variations
+   - Marshall Islands has the most anomalies in absolute terms
+
+4. EXTREME WEATHER PATTERNS:
+   - Temperature range: -24.9C to 49.1C
+   - Humidity range: 4.0% to 100.0%
+   - Extreme conditions concentrated in specific geographic regions
+
+INTERPRETATION
+--------------------------------------------------------------------------------
+- The 3% outlier rate indicates a relatively high-quality dataset
+- Winter anomalies likely reflect genuine extreme weather events in cold regions
+- Island/Arctic locations naturally experience more variable conditions
+- Outliers are NOT random errors but reflect real climate patterns
+- These regions may need location-specific modeling approaches
+
+RECOMMENDATIONS
+--------------------------------------------------------------------------------
+- Consider separate models for high-outlier regions (islands, arctic)
+- Add seasonal features to capture winter/summer differences
+- Include latitude as a feature - strong correlation with outliers
+- Investigate if Majuro has data quality issues (highest count)
+- Use outlier flags as features in prediction model
+- For production: implement real-time anomaly detection
+
+IMPACT ON MODEL TRAINING
+--------------------------------------------------------------------------------
+- Keep outliers in training data - they represent real weather extremes
+- Consider robust loss functions (Huber loss) for extreme values
+- Use location-based stratification in train/test split
+- Monitor model performance separately for high-outlier regions
+
+================================================================================

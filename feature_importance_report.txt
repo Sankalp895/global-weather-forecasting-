@@ -1,0 +1,45 @@
+
+===============================================================================
+FEATURE IMPORTANCE ANALYSIS REPORT
+===============================================================================
+
+ANALYSIS METHODS:
+1. Permutation Importance (XGBoost & LightGBM for Temperature & Humidity)
+2. SHAP Values (Random Forest for Temperature & Humidity)
+
+===============================================================================
+TOP 10 MOST IMPORTANT FEATURES (OVERALL AVERAGE)
+===============================================================================
+
+  1. temperature_celsius_lag1           : 0.3679
+  2. humidity_lag1                      : 0.1418
+  3. temperature_celsius_roll_mean_30   : 0.0681
+  4. humidity_roll_mean_30              : 0.0548
+  5. humidity_roll_mean_3               : 0.0346
+  6. temperature_celsius_roll_mean_3    : 0.0194
+  7. latitude                           : 0.0167
+  8. temperature_celsius_roll_mean_7    : 0.0133
+  9. longitude                          : 0.0106
+  10. humidity_roll_mean_7               : 0.0101
+
+===============================================================================
+KEY INSIGHTS
+===============================================================================
+
+LAG FEATURES DOMINATE:
+  Temperature and humidity lag features consistently rank highest
+  Recent values are best predictors of future weather
+
+TEMPORAL FEATURES:
+  Month, day_of_year, and cyclical encodings are important
+  Seasonal patterns strongly influence predictions
+
+ROLLING STATISTICS:
+  Moving averages provide trend information
+  Standard deviations capture volatility
+
+MODEL AGREEMENT:
+  All models agree on top features
+  Different models weight features differently
+
+===============================================================================

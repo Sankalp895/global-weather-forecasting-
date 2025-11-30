@@ -1,0 +1,47 @@
+{
+    "model_type": "LightGBM",
+    "hyperparameters": {
+        "n_estimators": 300,
+        "max_depth": 15,
+        "learning_rate": 0.1,
+        "num_leaves": 31,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "min_child_samples": 20
+    },
+    "evaluation_metrics": {
+        "temperature_c": {
+            "train": {
+                "rmse": 1.8650403621052534,
+                "mae": 1.3560298125508687,
+                "r2": 0.9507383192201646
+            },
+            "test": {
+                "rmse": 2.3787609996400882,
+                "mae": 1.7001863258623382,
+                "r2": 0.941298239212771
+            }
+        },
+        "humidity_%": {
+            "train": {
+                "rmse": 9.07418836792848,
+                "mae": 6.698269539910208,
+                "r2": 0.8577497598975445
+            },
+            "test": {
+                "rmse": 11.253414829863535,
+                "mae": 8.312338949034379,
+                "r2": 0.7874613370426299
+            }
+        }
+    },
+    "model_info": {
+        "n_training_samples": 76392,
+        "n_test_samples": 25464,
+        "n_features": 34,
+        "targets": [
+            "temperature_celsius",
+            "humidity"
+        ]
+    }
+}

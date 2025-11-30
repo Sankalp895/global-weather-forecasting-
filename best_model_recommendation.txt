@@ -1,0 +1,47 @@
+
+MODEL COMPARISON & RECOMMENDATION REPORT
+Generated: 2025-11-29 14:00:03
+
+MODELS EVALUATED: 6
+  Random Forest, XGBoost, LightGBM, Linear, Ridge, Lasso
+
+═══════════════════════════════════════════════════════════════════════════════
+TEMPERATURE PREDICTION
+═══════════════════════════════════════════════════════════════════════════════
+
+🥇 BEST MODEL: Random Forest
+   Test RMSE: 2.376°C
+   Test MAE:  1.675°C
+   Test R²:   0.9414
+
+Rankings (by Test RMSE):
+  1. Random Forest: RMSE=2.376°C, R²=0.9414
+  2. LightGBM: RMSE=2.379°C, R²=0.9413
+  3. Linear: RMSE=2.384°C, R²=0.9410
+  4. Ridge: RMSE=2.385°C, R²=0.9410
+  5. XGBoost: RMSE=2.390°C, R²=0.9408
+  6. Lasso: RMSE=2.673°C, R²=0.9259
+
+═══════════════════════════════════════════════════════════════════════════════
+HUMIDITY PREDICTION
+═══════════════════════════════════════════════════════════════════════════════
+
+🥇 BEST MODEL: Random Forest
+   Test RMSE: 11.206%
+   Test MAE:  8.231%
+   Test R²:   0.7892
+
+Rankings (by Test RMSE):
+  1. Random Forest: RMSE=11.206%, R²=0.7892
+  2. LightGBM: RMSE=11.253%, R²=0.7875
+  3. Linear: RMSE=11.292%, R²=0.7860
+  4. Ridge: RMSE=11.292%, R²=0.7860
+  5. XGBoost: RMSE=11.438%, R²=0.7804
+  6. Lasso: RMSE=11.590%, R²=0.7746
+
+═══════════════════════════════════════════════════════════════════════════════
+RECOMMENDATIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 PRODUCTION: Use Random Forest for temperature, Random Forest for humidity
+

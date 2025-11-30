@@ -1,0 +1,38 @@
+{
+    "model_type": "Linear Regression",
+    "evaluation_metrics": {
+        "temperature_c": {
+            "train": {
+                "rmse": 2.2782975190514323,
+                "mae": 1.610065634805765,
+                "r2": 0.9264887800492735
+            },
+            "test": {
+                "rmse": 2.3843917751826273,
+                "mae": 1.6988726440584505,
+                "r2": 0.9410200039078216
+            }
+        },
+        "humidity_%": {
+            "train": {
+                "rmse": 10.601874940012666,
+                "mae": 7.675968065085502,
+                "r2": 0.8058207670187263
+            },
+            "test": {
+                "rmse": 11.291706671856142,
+                "mae": 8.175979029965653,
+                "r2": 0.7860124713606946
+            }
+        }
+    },
+    "model_info": {
+        "n_training_samples": 76392,
+        "n_test_samples": 25464,
+        "n_features": 34,
+        "targets": [
+            "temperature_celsius",
+            "humidity"
+        ]
+    }
+}

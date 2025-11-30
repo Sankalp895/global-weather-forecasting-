@@ -1,0 +1,20 @@
+{
+    "best_hyperparameters": {
+        "bootstrap": false,
+        "max_depth": 30,
+        "max_features": "log2",
+        "min_samples_leaf": 5,
+        "min_samples_split": 3,
+        "n_estimators": 443
+    },
+    "cv_score": -0.13111232965426925,
+    "tuning_metadata": {
+        "n_iterations": 20,
+        "cv_folds": 3,
+        "scoring_metric": "neg_mean_squared_error",
+        "training_samples": 76392,
+        "n_features": 34,
+        "tuning_time_minutes": 38.37,
+        "timestamp": "2025-11-29 11:06:03"
+    }
+}

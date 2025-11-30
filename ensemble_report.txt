@@ -1,0 +1,54 @@
+
+===============================================================================
+ENSEMBLE MODEL REPORT
+Generated: 2025-11-29 14:31:01
+===============================================================================
+
+ENSEMBLE ARCHITECTURE: Stacking
+Base Models: Random Forest + XGBoost + LightGBM
+Meta-Model: Ridge Regression (combines base model predictions)
+
+===============================================================================
+PERFORMANCE COMPARISON
+===============================================================================
+
+TEMPERATURE PREDICTION (Test RMSE):
+  Random Forest:  2.376 C
+  XGBoost:        2.390 C
+  LightGBM:       2.379 C
+  ENSEMBLE:       2.321 C
+  
+  Improvement: 0.056 C (2.34%)
+
+HUMIDITY PREDICTION (Test RMSE):
+  Random Forest:  11.206%
+  XGBoost:        11.438%
+  LightGBM:       11.253%
+  ENSEMBLE:       11.124%
+  
+  Improvement: 0.082% (0.73%)
+
+===============================================================================
+KEY INSIGHTS
+===============================================================================
+
+1. The stacking ensemble combines strengths of all three base models
+2. Meta-model (Ridge) learns optimal weights for each base model
+3. Ensemble typically reduces variance and improves generalization
+4. Best for production deployment when maximum accuracy is needed
+
+TRADE-OFFS:
+  + Higher accuracy than individual models
+  - Slower inference (needs all 3 base models)
+  - More complex deployment
+
+===============================================================================
+ASSIGNMENT COMPLETION STATUS
+===============================================================================
+
+DONE: Task 1 - Advanced EDA (Anomaly Detection)
+DONE: Task 2 - Forecasting with Multiple Models (6 models)
+DONE: Task 3 - Ensemble Methods (Stacking Ensemble)
+TODO: Task 4 - Unique Analyses
+
+===============================================================================

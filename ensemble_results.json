@@ -1,0 +1,44 @@
+{
+    "model_type": "Stacking Ensemble (RF + XGBoost + LightGBM)",
+    "base_models": [
+        "Random Forest",
+        "XGBoost",
+        "LightGBM"
+    ],
+    "meta_model": "Ridge Regression",
+    "evaluation_metrics": {
+        "temperature_c": {
+            "train": {
+                "rmse": 1.4882596288326098,
+                "mae": 1.054877736887994,
+                "r2": 0.9686317595920431
+            },
+            "test": {
+                "rmse": 2.320817430162343,
+                "mae": 1.6450802099012278,
+                "r2": 0.9441232080178583
+            }
+        },
+        "humidity_%": {
+            "train": {
+                "rmse": 6.683485698423526,
+                "mae": 4.7471827663424415,
+                "r2": 0.9228308932072546
+            },
+            "test": {
+                "rmse": 11.124193938622085,
+                "mae": 8.102158204304883,
+                "r2": 0.792314397439817
+            }
+        }
+    },
+    "model_info": {
+        "n_training_samples": 76392,
+        "n_test_samples": 25464,
+        "n_features": 34,
+        "targets": [
+            "temperature_celsius",
+            "humidity"
+        ]
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "model_type": "XGBoost",
+    "hyperparameters": {
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "min_child_weight": 1,
+        "gamma": 0
+    },
+    "evaluation_metrics": {
+        "temperature_c": {
+            "train": {
+                "rmse": 1.7603144615329571,
+                "mae": 1.2906585793809284,
+                "r2": 0.9561152863049414
+            },
+            "test": {
+                "rmse": 2.38961908603433,
+                "mae": 1.7165385157532647,
+                "r2": 0.9407611163140505
+            }
+        },
+        "humidity_%": {
+            "train": {
+                "rmse": 8.626348690342182,
+                "mae": 6.4028731054417785,
+                "r2": 0.8714442680670067
+            },
+            "test": {
+                "rmse": 11.4379942224875,
+                "mae": 8.5468765664992,
+                "r2": 0.7804320065159596
+            }
+        }
+    },
+    "model_info": {
+        "n_training_samples": 76392,
+        "n_test_samples": 25464,
+        "n_features": 34,
+        "targets": [
+            "temperature_celsius",
+            "humidity"
+        ]
+    }
+}

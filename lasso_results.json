@@ -1,0 +1,38 @@
+{
+    "model_type": "Lasso Regression",
+    "evaluation_metrics": {
+        "temperature_c": {
+            "train": {
+                "rmse": 2.450940212371326,
+                "mae": 1.7747186521361367,
+                "r2": 0.9149257380220266
+            },
+            "test": {
+                "rmse": 2.6726113256526167,
+                "mae": 1.9680661070019874,
+                "r2": 0.9258995034495334
+            }
+        },
+        "humidity_%": {
+            "train": {
+                "rmse": 10.926674615822972,
+                "mae": 8.26629140650519,
+                "r2": 0.7937407433425974
+            },
+            "test": {
+                "rmse": 11.589954450681736,
+                "mae": 8.810490048825026,
+                "r2": 0.774559081211304
+            }
+        }
+    },
+    "model_info": {
+        "n_training_samples": 76392,
+        "n_test_samples": 25464,
+        "n_features": 34,
+        "targets": [
+            "temperature_celsius",
+            "humidity"
+        ]
+    }
+}

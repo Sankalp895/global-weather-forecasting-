@@ -1,0 +1,38 @@
+{
+    "model_type": "Ridge Regression",
+    "evaluation_metrics": {
+        "temperature_c": {
+            "train": {
+                "rmse": 2.2785278196956225,
+                "mae": 1.6096248445885024,
+                "r2": 0.9264739176032296
+            },
+            "test": {
+                "rmse": 2.384524186085843,
+                "mae": 1.6986119688841173,
+                "r2": 0.9410134531291466
+            }
+        },
+        "humidity_%": {
+            "train": {
+                "rmse": 10.601943710643447,
+                "mae": 7.674100292659881,
+                "r2": 0.8058182478658928
+            },
+            "test": {
+                "rmse": 11.291904214780873,
+                "mae": 8.174128642690972,
+                "r2": 0.7860049840794088
+            }
+        }
+    },
+    "model_info": {
+        "n_training_samples": 76392,
+        "n_test_samples": 25464,
+        "n_features": 34,
+        "targets": [
+            "temperature_celsius",
+            "humidity"
+        ]
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "hyperparameters": {
+        "bootstrap": false,
+        "max_depth": 30,
+        "max_features": "log2",
+        "min_samples_leaf": 5,
+        "min_samples_split": 3,
+        "n_estimators": 443
+    },
+    "evaluation_metrics": {
+        "temperature_c": {
+            "train": {
+                "rmse": 1.1065740800214923,
+                "mae": 0.7353858913938977,
+                "r2": 0.9826582172156378
+            },
+            "test": {
+                "rmse": 2.376414377782108,
+                "mae": 1.6754078012203684,
+                "r2": 0.9414139993838312
+            }
+        },
+        "humidity_%": {
+            "train": {
+                "rmse": 5.198586710539412,
+                "mae": 3.561211651773551,
+                "r2": 0.9533117052689892
+            },
+            "test": {
+                "rmse": 11.206435947461806,
+                "mae": 8.23099902810937,
+                "r2": 0.7892321750510188
+            }
+        }
+    },
+    "model_info": {
+        "model_type": "MultiOutputRegressor(RandomForestRegressor)",
+        "n_training_samples": 76392,
+        "n_test_samples": 25464,
+        "n_features": 34,
+        "targets": [
+            "temperature_celsius",
+            "humidity"
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "total_locations": 254,
+    "total_countries": 211,
+    "hottest_location": {
+        "name": "Ar Riyadh",
+        "country": "Saudi Arabien",
+        "temperature": 45.0
+    },
+    "coldest_location": {
+        "name": "S-Chanf",
+        "country": "Switzerland",
+        "temperature": 4.942857142857143
+    },
+    "latitude_temperature_correlation": -0.3202981009382623,
+    "climate_zones": {
+        "Temperate": 132,
+        "Tropical": 113,
+        "Cold": 9
+    }
+}

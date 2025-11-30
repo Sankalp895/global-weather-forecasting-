@@ -1,0 +1,48 @@
+{
+    "dataset_info": {
+        "total_records": 108353,
+        "features_analyzed": [
+            "temperature_celsius",
+            "humidity",
+            "precip_mm",
+            "wind_kph",
+            "pressure_mb",
+            "cloud",
+            "feels_like_celsius",
+            "visibility_km",
+            "uv_index"
+        ]
+    },
+    "methods": {
+        "z_score": {
+            "outliers": 5459,
+            "percentage": 5.038162302843483,
+            "threshold": 3
+        },
+        "iqr": {
+            "outliers": 39444,
+            "percentage": 36.403237566103385
+        },
+        "isolation_forest": {
+            "outliers": 5418,
+            "percentage": 5.000323018282835,
+            "contamination": 0.05
+        },
+        "lof": {
+            "outliers": 500,
+            "percentage": 5.0,
+            "sample_size": 10000
+        },
+        "dbscan": {
+            "outliers": 9820,
+            "percentage": 98.2,
+            "clusters": 1,
+            "sample_size": 10000
+        }
+    },
+    "consensus": {
+        "outliers": 3271,
+        "percentage": 3.018836580436167,
+        "threshold": "3 or more methods"
+    }
+}

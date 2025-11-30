@@ -1,0 +1,29 @@
+{
+    "extreme_weather": {
+        "extreme_heat_count": 4745,
+        "extreme_cold_count": 175,
+        "high_humidity_count": 15470,
+        "low_humidity_count": 6094
+    },
+    "comfort_distribution": {
+        "Very Hot": 88689,
+        "Hot": 14064,
+        "Comfortable": 5494,
+        "Cold": 102,
+        "Very Cold": 4
+    },
+    "precipitation_distribution": {
+        "No Rain": 71924,
+        "Light Rain": 36237,
+        "Moderate Rain": 182,
+        "Heavy Rain": 10
+    },
+    "wind_distribution": {
+        "Light Breeze": 67891,
+        "Moderate Wind": 20523,
+        "Calm": 19312,
+        "Strong Wind": 591,
+        "Very Strong Wind": 36
+    },
+    "average_heat_index": 53.01205163677978
+}
